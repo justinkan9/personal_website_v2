@@ -15,6 +15,14 @@ class App extends Component {
 							<a href="#">CONTACT</a>
 						</div>
 					</div>
+					<div className="header-quote">
+						<div className="header-quote-main">
+							Software is a great combination between artistry and engineering
+						</div>
+						<div className="header-quote-sub">
+							Bill Gates
+						</div>
+					</div>
 				</div>
 				<div className="placeholder-large">
 					some large item here..
