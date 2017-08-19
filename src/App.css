@@ -1,24 +1,46 @@
-.App {
-  text-align: center;
-}
+/* Google fonts */
+@import url("https://fonts.googleapis.com/css?family=Pacifico|Quicksand");
+body {
+  font-family: 'Quicksand', sans-serif; }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
+a {
+  text-decoration: none; }
+  a:hover {
+    text-decoration: none; }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
+/* TODO: remove later...*/
+.placeholder-large {
+  height: 1800px; }
 
-.App-intro {
-  font-size: large;
-}
+.header-content {
+  width: 100%;
+  height: 600px;
+  background-color: #092327; }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
+.header-top-bar {
+  height: 120px;
+  width: 100%;
+  background-color: #092327;
+  position: fixed;
+  top: 0; }
+
+img.logo {
+  height: 72px;
+  padding: 24px;
+  filter: grayscale(100%) opacity(30%); }
+  img.logo:hover {
+    filter: none;
+    cursor: pointer; }
+
+.header-toolbar {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: 48px; }
+  .header-toolbar > a {
+    color: #FAFAFA;
+    margin-right: 24px;
+    font-size: 18px;
+    opacity: 0.8; }
+    .header-toolbar > a:hover {
+      opacity: 1; }

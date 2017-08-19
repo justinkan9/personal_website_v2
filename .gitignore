@@ -57,3 +57,8 @@ typings/
 # dotenv environment variables file
 .env
 
+# Compiled css files
+src/**/*.css
+
+# swp files
+*.swp

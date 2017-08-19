@@ -1,0 +1,70 @@
+$color1: #092327;	// Dark teal
+$color2: #2A9D8F;	// Teal
+$color3: #E08DAC;	// Dusty pink
+$color4: #E2FCEF;	// Light mint
+$color5: #6A7FDB;	// Powder blue
+$color6: #424242;	// Shadow
+$color7: #212121;	// Text color black
+$color8: #FAFAFA;	// Text color white
+
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css?family=Pacifico|Quicksand');
+
+body {
+	font-family: 'Quicksand', sans-serif;
+}
+
+a {
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+/* TODO: remove later...*/
+.placeholder-large {
+	height: 1800px;
+}
+
+.header-content {
+    width: 100%;
+    height: 600px;
+    background-color: $color1;
+}
+
+.header-top-bar {
+    height: 120px;
+	width: 100%;
+	background-color: $color1;
+	position: fixed;
+	top: 0;
+}
+
+img.logo {
+    height: 72px;
+    padding: 24px;
+	filter: grayscale(100%) opacity(30%);
+
+	&:hover {
+		filter: none;
+		cursor: pointer;
+	}
+
+}
+.header-toolbar {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+	top: 48px;
+
+	& > a {
+		color: #FAFAFA;
+		margin-right: 24px;
+		font-size: 18px;
+		opacity: 0.8;
+		&:hover {
+			opacity: 1;
+		}
+	}
+}

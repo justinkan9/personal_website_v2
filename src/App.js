@@ -3,8 +3,28 @@ import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
-  render() {
-    return (
+	render() {
+		return (
+    		<div className="app-content">
+				<div className="header-content">
+					<div className="header-top-bar">
+						<img src={logo} className="logo"/>
+						<div className="header-toolbar">
+							<a href="#">ABOUT</a>
+							<a href="#">WORK</a>
+							<a href="#">CONTACT</a>
+						</div>
+					</div>
+				</div>
+				<div className="placeholder-large">
+					some large item here..
+				</div>
+      		</div>
+    	);
+  	}
+}
+
+/*
       <div className="App">
         <div className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
@@ -14,8 +34,6 @@ class App extends Component {
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
       </div>
-    );
-  }
-}
+*/
 
 export default App;
