@@ -1,5 +1,5 @@
 {
-  "name": "website",
+  "name": "justinkang_personal_website_v2",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -12,5 +12,11 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "author": "Justin S Kang",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/justinkan9/personal_website_v2"
   }
 }
