@@ -3,7 +3,36 @@ import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
+
+	constructor(props) {
+		super(props);
+		this.state = {
+			scrollTop: 0
+		}
+		this.handleScroll = this.handleScroll.bind(this);
+	}
+
+	componentDidMount() {
+		window.addEventListener("scroll", this.handleScroll);
+	}
+
+	componentWillUnmount() {
+		window.removeEventListener("scroll", this.handleScroll);
+	}
+
+	handleScroll(event) {
+		const scrollTop = event.srcElement.body.scrollTop;
+		this.setState({
+			scrollTop
+		})
+	}
+
 	render() {
+		var headerQuoteClass = "header-quote ease-in";
+		if(this.state.scrollTop > 180) {
+			headerQuoteClass = "header-quote ease-out";
+		}
+
 		return (
     		<div className="app-content">
 				<div className="header-content">
@@ -15,13 +44,24 @@ class App extends Component {
 							<a href="#">CONTACT</a>
 						</div>
 					</div>
-					<div className="header-quote">
+					<div className={headerQuoteClass}>
 						<div className="header-quote-main">
 							Software is a great combination between artistry and engineering
 						</div>
 						<div className="header-quote-sub">
 							Bill Gates
 						</div>
+					</div>
+				</div>
+				<div className="page-card bg-pink">
+					<div className="page-card-3">
+						<img src={process.env.PUBLIC_URL + "/images/about1.jpg"}/>
+					</div>
+					<div className="page-card-3">
+						<img src={process.env.PUBLIC_URL + "/images/about2.jpg"}/>
+					</div>
+					<div className="page-card-3">
+						<img src={process.env.PUBLIC_URL + "/images/about3.jpg"}/>
 					</div>
 				</div>
 				<div className="placeholder-large">
@@ -31,17 +71,5 @@ class App extends Component {
     	);
   	}
 }
-
-/*
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
-*/
 
 export default App;

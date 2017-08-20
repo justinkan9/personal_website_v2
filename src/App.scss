@@ -84,10 +84,54 @@ img.logo {
 	}
 
 	.header-quote-sub {
+		padding-top: 12px;
 		text-align: center;
 		font-size: 24px;
 		color: $color4;
 		opacity: 0.7;
 		letter-spacing: 3px;
 	}
+}
+
+.bg-pink {
+	background-color: $color3;
+}
+
+.page-card {
+	margin: 12px;
+	padding: 12px;
+	display: flex;
+	flex-direction: row;
+
+	.page-card-3 {
+		flex: 0 1 100%;
+    	padding: 12px;
+
+		img {
+			max-width: calc(100% - 12px);
+    		padding: 6px;
+		}
+	}
+}
+
+.ease-in {
+	animation-name: ease-in;
+	animation-duration: 0.3s;
+	animation-fill-mode: forwards;
+}
+
+.ease-out {
+	animation-name: ease-out;
+	animation-duration: 0.3s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes ease-out {
+	from { opacity: 1; }
+	to { opacity: 0; }
+}
+
+@keyframes ease-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
