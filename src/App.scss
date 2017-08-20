@@ -39,6 +39,7 @@ a {
 	background-color: $color1;
 	position: fixed;
 	top: 0;
+	z-index: 1;
 }
 
 img.logo {
@@ -75,21 +76,13 @@ img.logo {
 	height: 600px;
 	margin-top: 120px;
 
-	.header-quote-main {
-		text-align: center;
-		color: $color4;
-		font-family: 'Pacifico', cursive;
-		font-size: 36px;
+	.quote {
 		padding-top: 204px;
+		color: $color4;
 	}
 
-	.header-quote-sub {
-		padding-top: 12px;
-		text-align: center;
-		font-size: 24px;
+	.quote-sub {
 		color: $color4;
-		opacity: 0.7;
-		letter-spacing: 3px;
 	}
 }
 
@@ -97,18 +90,55 @@ img.logo {
 	background-color: $color3;
 }
 
+.quote {
+    width: 100%;
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    font-size: 36px;
+}
+
+.quote-sub {
+	width: 100%;
+    padding-top: 12px;
+    text-align: center;
+    font-size: 24px;
+    opacity: 0.7;
+    letter-spacing: 3px;
+}
+
 .page-card {
 	margin: 12px;
 	padding: 12px;
 	display: flex;
 	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+
+	label.title {
+	    width: 100%;
+	    color: $color8;
+	    font-size: 48px;
+	    text-align: center;
+	    letter-spacing: 12px;
+	    margin: 24px 60px;
+    	border-bottom: 1px solid white;
+	}
+
+	.quote {
+        color: $color8;
+	}
+
+	.quote-sub {
+        color: $color8;
+		padding-bottom: 24px;
+	}
 
 	.page-card-3 {
-		flex: 0 1 100%;
+		flex: 0 1 360px;
     	padding: 12px;
 
 		img {
-			max-width: calc(100% - 12px);
+			width: 360px;
     		padding: 6px;
 		}
 	}

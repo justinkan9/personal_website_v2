@@ -45,15 +45,22 @@ class App extends Component {
 						</div>
 					</div>
 					<div className={headerQuoteClass}>
-						<div className="header-quote-main">
+						<div className="quote">
 							Software is a great combination between artistry and engineering
 						</div>
-						<div className="header-quote-sub">
+						<div className="quote-sub">
 							Bill Gates
 						</div>
 					</div>
 				</div>
 				<div className="page-card bg-pink">
+					<label className="title">ABOUT</label>
+					<div className="quote">
+						When I give, I give myself
+					</div>
+					<div className="quote-sub">
+						Walt Whitman
+					</div>
 					<div className="page-card-3">
 						<img src={process.env.PUBLIC_URL + "/images/about1.jpg"}/>
 					</div>
