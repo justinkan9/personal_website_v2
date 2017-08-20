@@ -109,6 +109,7 @@ img.logo {
 .page-card {
 	margin: 12px;
 	padding: 12px;
+	border-radius: 6px;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -134,12 +135,19 @@ img.logo {
 	}
 
 	.page-card-3 {
-		flex: 0 1 360px;
+		flex: 0 1 324px;
     	padding: 12px;
 
+		.page-card-wrapper {
+			padding: 12px;
+			border-radius: 6px;
+			background-color: rgba(255,255,255,0.2);
+		}
+
 		img {
-			width: 360px;
+			width: 300px;
     		padding: 6px;
+			border-radius: 12px;
 		}
 	}
 }

@@ -62,13 +62,19 @@ class App extends Component {
 						Walt Whitman
 					</div>
 					<div className="page-card-3">
-						<img src={process.env.PUBLIC_URL + "/images/about1.jpg"}/>
+						<div className="page-card-wrapper">
+							<img src={process.env.PUBLIC_URL + "/images/about1.jpg"}/>
+						</div>
 					</div>
 					<div className="page-card-3">
-						<img src={process.env.PUBLIC_URL + "/images/about2.jpg"}/>
+						<div className="page-card-wrapper">
+							<img src={process.env.PUBLIC_URL + "/images/about2.jpg"}/>
+						</div>
 					</div>
 					<div className="page-card-3">
-						<img src={process.env.PUBLIC_URL + "/images/about3.jpg"}/>
+						<div className="page-card-wrapper">
+							<img src={process.env.PUBLIC_URL + "/images/about3.jpg"}/>
+						</div>
 					</div>
 				</div>
 				<div className="placeholder-large">
