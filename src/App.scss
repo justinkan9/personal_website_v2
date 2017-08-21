@@ -169,7 +169,6 @@ img.logo {
 	justify-content: center;
 
 	label.title {
-	    width: 100%;
 	    color: $color8;
 	    font-size: 48px;
 	    text-align: center;
@@ -183,6 +182,7 @@ img.logo {
 
 	.quote {
         color: $color8;
+		margin-top: 12px;
 	}
 
 	.quote-sub {
