@@ -6,9 +6,48 @@ $color5: #6A7FDB;	// Powder blue
 $color6: #424242;	// Shadow
 $color7: #212121;	// Text color black
 $color8: #FAFAFA;	// Text color white
+$color9: #EB5160;	// Punch red
 
 /* Google fonts */
 @import url('https://fonts.googleapis.com/css?family=Pacifico|Quicksand');
+
+/* Google Material icons */
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+    src: local('Material Icons'),
+        local('MaterialIcons-Regular'),
+        url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+        url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+        url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
 
 body {
 	font-family: 'Quicksand', sans-serif;
@@ -20,11 +59,6 @@ a {
 	&:hover {
 		text-decoration: none;
 	}
-}
-
-/* TODO: remove later...*/
-.placeholder-large {
-	height: 1800px;
 }
 
 .header-content {
@@ -84,10 +118,29 @@ img.logo {
 	.quote-sub {
 		color: $color4;
 	}
+
+	i {
+		text-align: center;
+    	color: $color4;
+    	font-size: 36px;
+    	margin-top: 12px;
+	}
 }
 
 .bg-pink {
 	background-color: $color3;
+}
+
+.bg-teal {
+	background-color: $color2;
+}
+
+.bg-blue {
+	background-color: $color5;
+}
+
+.bg-red {
+	background-color: $color9;
 }
 
 .quote {
@@ -122,7 +175,10 @@ img.logo {
 	    text-align: center;
 	    letter-spacing: 12px;
 	    margin: 24px 60px;
-    	border-bottom: 1px solid white;
+    	/* border-bottom: 1px solid white; */
+    	position: sticky;
+    	top: 30px;
+    	z-index: 2;
 	}
 
 	.quote {
@@ -137,11 +193,39 @@ img.logo {
 	.page-card-3 {
 		flex: 0 1 324px;
     	padding: 12px;
+		margin-bottom: 12px;
 
 		.page-card-wrapper {
-			padding: 12px;
+			padding: 12px 12px 24px 12px;
 			border-radius: 6px;
 			background-color: rgba(255,255,255,0.2);
+			text-align: center;
+			height: calc(100% - 24px);
+
+			p.page-card-text {
+				color: $color8;
+    			padding: 0 6px;
+    			line-height: 24px;
+				text-align: left;
+				margin-bottom: -24px;
+
+				i {
+					vertical-align: sub;
+				}
+
+				img {
+					background-color: rgba(255,255,255,0.6);
+    				width: 288px;
+    				margin-bottom: 24px;
+				}
+			}
+
+			.button {
+				background-color: $color2;
+			    display: inline-block;
+			    margin-top: 24px;
+			}
+
 		}
 
 		img {
@@ -150,6 +234,71 @@ img.logo {
 			border-radius: 12px;
 		}
 	}
+}
+
+.work-card {
+	color: $color8;
+
+	.img-container {
+		width: 192px;
+    	height: 192px;
+    	padding: 24px;
+		margin-left: 60px;
+		display: inline-block;
+    	background-color: $color8;
+    	border-radius: 50%;
+
+		img {
+			width: 192px;
+    		position: relative;
+    		top: 50%;
+    		transform: translateY(-50%);
+		}
+	}
+
+	.work-desc {
+	    display: inline-block;
+	    vertical-align: top;
+	    width: calc(100% - 396px);
+	    height: 192px;
+	    margin: 0 48px;
+		overflow-y: auto;
+
+		h2 {
+			margin: 0;
+		}
+
+		h4 {
+			margin: 0;
+			opacity: 0.8;
+		}
+	}
+}
+
+.slider-container {
+    width: calc(100% - 48px);
+    padding: 48px 0;
+}
+
+.button {
+    color: $color8;
+    padding: 12px 24px;
+    border-radius: 6px;
+}
+
+.extra-bottom-margin {
+	margin-bottom: 12px;
+}
+
+.flash {
+    width: 100%;
+    animation: flash 2s linear infinite;
+}
+
+@keyframes flash {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
 }
 
 .ease-in {

@@ -7,6 +7,7 @@
     "npm-run-all": "^4.0.2",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
+    "react-download-link": "^1.0.1",
     "react-scripts": "1.0.11"
   },
   "scripts": {
@@ -23,5 +24,8 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/justinkan9/personal_website_v2"
+  },
+  "devDependencies": {
+    "react-slick": "^0.14.11"
   }
 }
