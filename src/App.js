@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import _ from 'lodash';
 import Slider from 'react-slick';
 import logo from './logo.svg';
 import './App.css';
@@ -22,7 +23,7 @@ class App extends Component {
 	}
 
 	handleScroll(event) {
-		const scrollTop = event.srcElement.body.scrollTop;
+		const scrollTop = _.get(event, "srcElement.body.scrollTop", 0);
 		this.setState({
 			scrollTop
 		})
@@ -38,7 +39,7 @@ class App extends Component {
     		<div className="app-content">
 				<div className="header-content">
 					<div className="header-top-bar">
-						<img src={logo} className="logo"/>
+						<img src={logo} className="logo" alt=""/>
 						<div className="header-toolbar">
 							<a href="#">ABOUT</a>
 							<a href="#">WORK</a>
@@ -65,7 +66,7 @@ class App extends Component {
 					</div>
 					<div className="page-card-3">
 						<div className="page-card-wrapper">
-							<img src={process.env.PUBLIC_URL + "/images/about1.jpg"}/>
+							<img src={process.env.PUBLIC_URL + "/images/about1.jpg"} alt=""/>
 							<p className="page-card-text">
 								<i className="material-icons">face</i> Justin Seokhyun Kang <br/><br/>
 								Yoga master in training <br/><br/>
@@ -77,17 +78,17 @@ class App extends Component {
 					</div>
 					<div className="page-card-3">
 						<div className="page-card-wrapper">
-							<img src={process.env.PUBLIC_URL + "/images/about2.jpg"}/>
+							<img src={process.env.PUBLIC_URL + "/images/about2.jpg"} alt=""/>
 							<p className="page-card-text">
-								<img src={process.env.PUBLIC_URL + "/images/trevor_project_logo.png"}/>
-								<img src={process.env.PUBLIC_URL + "/images/tnt_logo.png"}/>
+								<img src={process.env.PUBLIC_URL + "/images/trevor_project_logo.png"} alt=""/>
+								<img src={process.env.PUBLIC_URL + "/images/tnt_logo.png"} alt=""/>
 							</p>
 							<a className="button" href="http://www.teamintraining.org/" target="_blank">Learn More</a>
 						</div>
 					</div>
 					<div className="page-card-3">
 						<div className="page-card-wrapper">
-							<img src={process.env.PUBLIC_URL + "/images/about3.jpg"}/>
+							<img src={process.env.PUBLIC_URL + "/images/about3.jpg"} alt=""/>
 							<p className="page-card-text">
 								<i className="material-icons">place</i> San Jose, California <br/><br/>
 								<i className="material-icons">home</i> Orange County, California <br/><br/>
@@ -111,7 +112,7 @@ class App extends Component {
 								slidesToScroll={1}>
 							<div className="work-card">
 								<div className="img-container">
-									<img src={process.env.PUBLIC_URL + "/images/yahoo_logo.svg"}/>
+									<img src={process.env.PUBLIC_URL + "/images/yahoo_logo.svg"} alt=""/>
 								</div>
 								<div className="work-desc">
 									<h2>Yahoo!</h2>
@@ -127,7 +128,7 @@ class App extends Component {
 							</div>
 							<div className="work-card">
 								<div className="img-container">
-									<img src={process.env.PUBLIC_URL + "/images/raytheon_logo.svg"}/>
+									<img src={process.env.PUBLIC_URL + "/images/raytheon_logo.svg"} alt=""/>
 								</div>
 								<div className="work-desc">
                                     <h2>Raytheon Company</h2>
@@ -142,7 +143,7 @@ class App extends Component {
 							</div>
 							<div className="work-card">
 								<div className="img-container">
-									<img src={process.env.PUBLIC_URL + "/images/ucsd_logo.svg"}/>
+									<img src={process.env.PUBLIC_URL + "/images/ucsd_logo.svg"} alt=""/>
 								</div>
 								<div className="work-desc">
                                     <h2>UCSD CSE Department</h2>
@@ -157,7 +158,7 @@ class App extends Component {
 							</div>
 							<div className="work-card">
 								<div className="img-container">
-									<img src={process.env.PUBLIC_URL + "/images/lg_logo.svg"}/>
+									<img src={process.env.PUBLIC_URL + "/images/lg_logo.svg"} alt=""/>
 								</div>
 								<div className="work-desc">
                                     <h2>LG Electronics</h2>
@@ -181,7 +182,7 @@ class App extends Component {
                 <div className="page-card bg-blue">
                     <label className="title">CONTACT</label>
                     <div className="quote">
-                    	There are no strangers here; Only friends you haven't yet met
+                    	There are no strangers here, only friends you haven't yet met
 					</div>
                     <div className="quote-sub">
                         William Butler Yeats
