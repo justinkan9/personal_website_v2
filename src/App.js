@@ -23,7 +23,8 @@ class App extends Component {
 	}
 
 	handleScroll(event) {
-		const scrollTop = _.get(event, "srcElement.body.scrollTop", 0);
+		const scrollTop = _.get(event, "srcElement.body.scrollTop",
+			_.get(event, "target.scrollingElement.scrollTop", 0));
 		this.setState({
 			scrollTop
 		})
