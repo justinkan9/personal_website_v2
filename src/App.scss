@@ -123,6 +123,10 @@ img.logo {
 	.quote {
 		padding-top: 204px;
 		color: $color4;
+
+		@media screen and (max-width: 900px) {
+			padding-top: 120px;
+		}
 	}
 
 	.quote-sub {
