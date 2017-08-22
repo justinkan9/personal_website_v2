@@ -75,7 +75,7 @@ class App extends Component {
 								<i className="material-icons">face</i> Justin Seokhyun Kang <br/><br/>
 								Yoga master in training <br/><br/>
 								Code, design and everything in between <br/><br/>
-								True California boy who can't seem to leave the sunny bubble <br/><br/>
+								Genuine California boy who can't seem to leave the sunny bubble <br/><br/>
 								LGBT, love is love
 							</p>
 						</div>
@@ -170,7 +170,6 @@ class App extends Component {
                                     <p>
                                         R&D intern - Mobile department, buyer approval engineering <br/>
                                         Mobile software test engineer - Integration testing for pre-paid mobile devices <br/>
-                                        Technical writing - Documentation of Android compatibility definitions and certification requirements
                                     </p>
 								</div>
 							</div>
