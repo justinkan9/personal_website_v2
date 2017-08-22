@@ -195,28 +195,30 @@ class App extends Component {
 						Justin Kang
 					</div>
 					<table cellSpacing="10">
-						<tr>
-							<td>
-								<a href="mailto:justinkan9@yahoo.com">
-                                	<i className="material-icons">email</i>
-								</a>
-							</td>
-							<td>
-								<a href="tel:+17142717677">
-                                	<i className="material-icons">phone</i>
-								</a>
-							</td>
-							<td>
-								<a href="https://www.linkedin.com/in/justin-kang-a4b5125b" target="_blank">
-                                	<i className="fa fa-linkedin"/>
-								</a>
-							</td>
-							<td>
-								<a href="https://www.facebook.com/justinokang" target="_blank">
-                                	<i className="fa fa-facebook"/>
-								</a>
-							</td>
-						</tr>
+						<tbody>
+							<tr>
+								<td>
+									<a href="mailto:justinkan9@yahoo.com">
+                        	        	<i className="material-icons">email</i>
+									</a>
+								</td>
+								<td>
+									<a href="tel:+17142717677">
+                        	        	<i className="material-icons">phone</i>
+									</a>
+								</td>
+								<td>
+									<a href="https://www.linkedin.com/in/justin-kang-a4b5125b" target="_blank">
+                        	        	<i className="fa fa-linkedin"/>
+									</a>
+								</td>
+								<td>
+									<a href="https://www.facebook.com/justinokang" target="_blank">
+                        	        	<i className="fa fa-facebook"/>
+									</a>
+								</td>
+							</tr>
+						</tbody>
 					</table>
 				</div>
       		</div>
