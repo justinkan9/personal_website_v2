@@ -139,7 +139,7 @@ class App extends Component {
                                     <h4>06.2012 - 06.2014</h4>
                                     <p>
                                         Software engineer - Ship self defense system <br/>
-                                        Security clearance holder - United States Department of Defense <br/>
+                                        Security clearance - United States Department of Defense <br/>
                                         Full-stack tools developer - Interface & HMI
                                     </p>
 								</div>
@@ -169,7 +169,7 @@ class App extends Component {
                                     <h4>06.2010 - 08.2010</h4>
                                     <p>
                                         R&D intern - Mobile department, buyer approval engineering <br/>
-                                        Mobile software test engineer - Integration testing for pre-paid mobile devices <br/>
+                                        Mobile software test engineer - Integration testing
                                     </p>
 								</div>
 							</div>

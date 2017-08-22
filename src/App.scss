@@ -257,12 +257,12 @@ a {
 
 .work-card {
 	color: $color8;
+	text-align: center;
 
 	.img-container {
 		width: 192px;
     	height: 192px;
     	padding: 24px;
-		margin-left: 120px;
 		display: inline-block;
     	background-color: $color8;
     	border-radius: 50%;
@@ -278,10 +278,10 @@ a {
 	.work-desc {
 	    display: inline-block;
 	    vertical-align: top;
-	    width: calc(100% - 456px);
 	    height: 244px;
 	    margin: 0 48px;
 		overflow-y: auto;
+		text-align: left;
 
 		h2 {
 			margin: 0;
@@ -294,8 +294,6 @@ a {
 	}
 
 	@media screen and (max-width: 900px) {
-		text-align: center;
-
 		.img-container {
 			width: 90px;
 			height: 90px;
@@ -307,9 +305,13 @@ a {
 		}
 
 		.work-desc {
-			width: inherit;
-			text-align: left;
-			margin: unset;
+			display: block;
+    		width: fit-content;
+    		margin: 0 auto;
+
+			h2, h4 {
+				text-align: center;
+			}
 		}
 	}
 }
