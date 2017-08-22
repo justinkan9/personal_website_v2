@@ -98,7 +98,8 @@ img.logo {
 		color: #FAFAFA;
 		margin-right: 24px;
 		font-size: 18px;
-		opacity: 0.8;
+		opacity: 0.6;
+
 		&:hover {
 			opacity: 1;
 		}
@@ -206,17 +207,18 @@ img.logo {
     			padding: 0 6px;
     			line-height: 24px;
 				text-align: left;
-				margin-bottom: -24px;
+				font-size: 18px;
+				margin-bottom: 0;
 
 				i {
 					vertical-align: sub;
 				}
+			}
 
-				img {
-					background-color: rgba(255,255,255,0.6);
-    				width: 288px;
-    				margin-bottom: 24px;
-				}
+			img.img-background {
+                background-color: rgba(255,255,255,0.6);
+                width: 288px;
+                margin-top: 24px;
 			}
 
 			.button {
@@ -242,7 +244,7 @@ img.logo {
 		width: 192px;
     	height: 192px;
     	padding: 24px;
-		margin-left: 60px;
+		margin-left: 120px;
 		display: inline-block;
     	background-color: $color8;
     	border-radius: 50%;
@@ -258,7 +260,7 @@ img.logo {
 	.work-desc {
 	    display: inline-block;
 	    vertical-align: top;
-	    width: calc(100% - 396px);
+	    width: calc(100% - 456px);
 	    height: 192px;
 	    margin: 0 48px;
 		overflow-y: auto;
@@ -287,6 +289,50 @@ img.logo {
 
 .extra-bottom-margin {
 	margin-bottom: 12px;
+}
+
+.contact-header {
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    margin-top: 24px;
+    margin-bottom: 6px;
+	color: $color8;
+
+	i {
+		vertical-align: sub;
+		font-size: 30px;
+	}
+}
+
+table {
+	color: $color8;
+	font-size: 24px;
+	margin-bottom: 12px;
+
+	td {
+		border-radius: 50%;
+		border: 2px solid $color8;
+		opacity: 0.6;
+
+		&:hover {
+			cursor: pointer;
+			opacity: 1;			
+		}
+
+		a {
+			color: $color8;
+
+			i.material-icons,
+			i.fa {
+    			font-size: 24px;
+				width: 24px;
+				height: 24px;
+				text-align: center;
+    			margin: 12px;
+			}
+		}
+	}
 }
 
 .flash {

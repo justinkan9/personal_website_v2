@@ -79,10 +79,8 @@ class App extends Component {
 					<div className="page-card-3">
 						<div className="page-card-wrapper">
 							<img src={process.env.PUBLIC_URL + "/images/about2.jpg"} alt=""/>
-							<p className="page-card-text">
-								<img src={process.env.PUBLIC_URL + "/images/trevor_project_logo.png"} alt=""/>
-								<img src={process.env.PUBLIC_URL + "/images/tnt_logo.png"} alt=""/>
-							</p>
+							<img className="img-background" src={process.env.PUBLIC_URL + "/images/trevor_project_logo.png"} alt=""/>
+							<img className="img-background" src={process.env.PUBLIC_URL + "/images/tnt_logo.png"} alt=""/>
 							<a className="button" href="http://www.teamintraining.org/" target="_blank">Learn More</a>
 						</div>
 					</div>
@@ -187,6 +185,34 @@ class App extends Component {
                     <div className="quote-sub">
                         William Butler Yeats
                     </div>
+					<div className="contact-header">
+						<i className="material-icons">add</i>
+						Justin Kang
+					</div>
+					<table cellSpacing="10">
+						<tr>
+							<td>
+								<a href="mailto:justinkan9@yahoo.com">
+                                	<i className="material-icons">email</i>
+								</a>
+							</td>
+							<td>
+								<a href="tel:+17142717677">
+                                	<i className="material-icons">phone</i>
+								</a>
+							</td>
+							<td>
+								<a href="https://www.linkedin.com/in/justin-kang-a4b5125b" target="_blank">
+                                	<i className="fa fa-linkedin"/>
+								</a>
+							</td>
+							<td>
+								<a href="https://www.facebook.com/justinokang" target="_blank">
+                                	<i className="fa fa-facebook"/>
+								</a>
+							</td>
+						</tr>
+					</table>
 				</div>
       		</div>
     	);
