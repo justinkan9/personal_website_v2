@@ -40,11 +40,13 @@ class App extends Component {
     		<div className="app-content">
 				<div className="header-content">
 					<div className="header-top-bar">
-						<img src={logo} className="logo" alt=""/>
+						<a href="/">
+							<img src={logo} className="logo" alt=""/>
+						</a>
 						<div className="header-toolbar">
-							<a href="#">ABOUT</a>
-							<a href="#">WORK</a>
-							<a href="#">CONTACT</a>
+							<a href="#about">ABOUT</a>
+							<a href="#work">WORK</a>
+							<a href="#contact">CONTACT</a>
 						</div>
 					</div>
 					<div className={headerQuoteClass}>
@@ -58,6 +60,7 @@ class App extends Component {
 					</div>
 				</div>
 				<div className="page-card bg-pink">
+					<a className="anchor" name="about"/>
 					<label className="title">ABOUT</label>
 					<div className="quote">
 						When I give, I give myself
@@ -97,6 +100,7 @@ class App extends Component {
 					</div>
 				</div>
                 <div className="page-card bg-teal">
+					<a className="anchor" name="work"/>
                     <label className="title">WORK</label>
                     <div className="quote">
                         What you are will show in what you do
@@ -179,6 +183,7 @@ class App extends Component {
 					</a>
 				</div>
                 <div className="page-card bg-blue">
+                    <a className="anchor" name="contact"/>
                     <label className="title">CONTACT</label>
                     <div className="quote">
                     	There are no strangers here, only friends you haven't yet met
