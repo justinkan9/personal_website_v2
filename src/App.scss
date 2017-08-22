@@ -125,7 +125,7 @@ a {
 		color: $color4;
 
 		@media screen and (max-width: 900px) {
-			padding-top: 120px;
+			padding-top: 180px;
 		}
 	}
 
@@ -162,6 +162,8 @@ a {
     text-align: center;
     font-family: 'Pacifico', cursive;
     font-size: 36px;
+	line-height: 48px;
+    padding-bottom: 24px;
 }
 
 .quote-sub {
