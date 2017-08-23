@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import _ from 'lodash';
 import Slider from 'react-slick';
 import logo from './logo.svg';
+import resume from './Justin_Kang_Resume_2017.pdf';
 import './App.css';
 
 class App extends Component {
@@ -176,7 +177,7 @@ class App extends Component {
 						</Slider>
 					</div>
 					<a className="button bg-red extra-bottom-margin"
-							href={process.env.PUBLIC_URL + "/Justin_Kang_Resume_2017.pdf"}
+							href={resume}
 							download="Justin_Kang_Resume_2017.pdf">
 						Download My Resume
 					</a>
