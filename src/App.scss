@@ -7,9 +7,10 @@ $color6: #424242;	// Shadow
 $color7: #212121;	// Text color black
 $color8: #FAFAFA;	// Text color white
 $color9: #EB5160;	// Punch red
+$colorA: #EEB902;	// Star yellow
 
 /* Google fonts */
-@import url('https://fonts.googleapis.com/css?family=Pacifico|Quicksand');
+@import url('https://fonts.googleapis.com/css?family=Cutive+Mono|Pacifico|Quicksand');
 
 /* Google Material icons */
 @font-face {
@@ -57,7 +58,8 @@ a {
 	}
 }
 
-.header-content {
+.header-content,
+.footer-content {
     width: 100%;
     height: 600px;
     background-color: $color1;
@@ -137,8 +139,16 @@ a {
 	}
 }
 
+.fg-mint {
+	color: $color4;
+}
+
 .bg-pink {
 	background-color: $color3;
+}
+
+.fg-pink {
+	color: $color3;
 }
 
 .bg-teal {
@@ -386,6 +396,66 @@ a.anchor {
 	}
 }
 
+.footer-content {
+	position: relative;
+	z-index: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+	.header {
+		font-family: 'Cutive Mono', monospace;
+	    font-size: 36px;
+	    text-align: center;
+	    padding-top: 24px;
+		width: 100%;
+	}
+
+	.footer-card {
+        flex: 0 1 324px;
+
+		h2 {
+		    text-align: center;
+		    color: $colorA;
+		    letter-spacing: 2px;
+			margin: 48px 0 0 0;
+		}
+
+		.img-container {
+			text-align: center;
+			margin: 12px 0;
+
+			a {
+				opacity: 0.6;
+
+				&:hover {
+					opacity: 1;
+				}
+
+				img {
+				    height: 60px;
+				    padding: 0 6px;
+				    vertical-align: middle;
+				}
+			}
+		}
+	}
+
+	#lights-overlay {
+	    position: absolute;
+	    top: 0;
+	    right: 0;
+	    left: 0;
+		background-image: url(./lamps.jpg);
+	    background-size: cover;
+	    background-position-x: center;
+	    height: 600px;
+	    opacity: 0.1;
+		z-index: -1;
+	}
+}
+
 .flash {
     width: 100%;
     animation: flash 2s linear infinite;
@@ -440,4 +510,14 @@ a.anchor {
 @-moz-keyframes ease-in {
     from { opacity: 0; }
     to { opacity: 1; }
+}
+
+.rotate {
+	animation: spin infinite 20s linear;
+	-moz-animation: spin infinite 20s linear;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
 }

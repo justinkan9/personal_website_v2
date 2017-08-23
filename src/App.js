@@ -75,7 +75,7 @@ class App extends Component {
 								<i className="material-icons">face</i> Justin Seokhyun Kang <br/><br/>
 								Yoga master in training <br/><br/>
 								Code, design and everything in between <br/><br/>
-								Genuine California boy who can't seem to leave the sunny bubble <br/><br/>
+								UCSD 2013 - B.S. Computer Science <br/><br/>
 								LGBT, love is love
 							</p>
 						</div>
@@ -220,6 +220,39 @@ class App extends Component {
 							</tr>
 						</tbody>
 					</table>
+				</div>
+				<div className="footer-content">
+					<div id="lights-overlay"/>
+					<div className="header fg-mint">
+						<span className="fg-pink">this</span>.document
+					</div>
+					<div className="footer-card">
+						<h2>Powered by:</h2>
+						<div className="img-container">
+							<a href="https://nodejs.org/" target="_blank">
+								<img src={process.env.PUBLIC_URL + "/images/nodejs_logo.svg"} alt=""/>
+							</a>
+                            <a href="https://facebook.github.io/react/" target="_blank">
+							<img className="rotate" src={process.env.PUBLIC_URL + "/images/react_logo.svg"} alt=""/>
+                            </a>
+						</div>
+					</div>
+					<div className="footer-card">
+                        <h2>Deployed on:</h2>
+                        <div className="img-container">
+                            <a href="https://surge.sh/" target="_blank">
+                            	<img src={process.env.PUBLIC_URL + "/images/surge_logo.svg"} alt=""/>
+                            </a>
+                        </div>
+					</div>
+					<div className="footer-card">
+                        <h2>Saved to:</h2>
+                        <div className="img-container">
+                            <a href="https://github.com/justinkan9/personal_website_v2" target="_blank">
+                            	<img src={process.env.PUBLIC_URL + "/images/github_logo.png"} alt=""/>
+                            </a>
+                        </div>
+					</div>
 				</div>
       		</div>
     	);
