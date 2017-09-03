@@ -2,7 +2,7 @@
 ###### Justin Kang's Website
 
 
-[Link to website](https://justinkang.herokuapp.com)
+[Link to website](https://justinkang.surge.sh)
 
 ## TODO list:
 ###### Warnings
