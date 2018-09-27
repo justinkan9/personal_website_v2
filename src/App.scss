@@ -209,7 +209,7 @@ a {
 
 	.quote {
         color: $color8;
-		margin-top: 12px;
+		margin-top: 36px;
 	}
 
 	.quote-sub {
@@ -280,6 +280,11 @@ a {
     		position: relative;
     		top: 50%;
     		transform: translateY(-50%);
+
+			&.padding-shrink {
+				padding: 25px;
+				width: 142px;
+			}
 		}
 	}
 
@@ -309,6 +314,11 @@ a {
 
 			img {
 				width: 90px;
+
+				&.padding-shrink {
+					padding: 12px;
+					width: 66px;
+				}
 			}
 		}
 

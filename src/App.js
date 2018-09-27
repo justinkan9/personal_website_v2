@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import _ from 'lodash';
 import Slider from 'react-slick';
 import logo from './logo.svg';
-import resume from './Justin_Kang_Resume_2017.pdf';
+import resume from './Justin_Kang_Resume_2018.pdf';
 import './App.css';
 
 class App extends Component {
@@ -116,12 +116,26 @@ class App extends Component {
 								slidesToScroll={1}>
 							<div className="work-card">
 								<div className="img-container">
+									<img className="padding-shrink" src={process.env.PUBLIC_URL + "/images/apple_logo.svg"} alt=""/>
+								</div>
+								<div className="work-desc">
+									<h2>Apple Inc.</h2>
+									<h4>Cupertino, California</h4>
+									<h4>06.2018 - Present</h4>
+									<p>
+										Software Engineer - Siri
+									</p>
+								</div>
+
+							</div>
+							<div className="work-card">
+								<div className="img-container">
 									<img src={process.env.PUBLIC_URL + "/images/yahoo_logo.svg"} alt=""/>
 								</div>
 								<div className="work-desc">
 									<h2>Yahoo!</h2>
 									<h4>Sunnyvale, California</h4>
-									<h4>07.2014 - Present</h4>
+									<h4>07.2014 - 05.2018</h4>
 									<p>
 										Front-end developer - Chatbots & NLU Platform <br/>
 										Full-stack tools developer - Search & Labs <br/>
@@ -178,7 +192,7 @@ class App extends Component {
 					</div>
 					<a className="button bg-red extra-bottom-margin"
 							href={resume}
-							download="Justin_Kang_Resume_2017.pdf">
+							download="Justin_Kang_Resume_2018.pdf">
 						Download My Resume
 					</a>
 				</div>
